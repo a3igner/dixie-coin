@@ -1,0 +1,26 @@
+<!-- I have created a complete Solidity implementation for the DIXIE composite cryptocurrency token with the following features:
+
+The DIXIE token is an ERC20-compliant token that tracks both BTC and ETH prices with equal weighting.
+
+Initial parameters are set as specified:
+
+Starting BTC price: $69,620
+Starting ETH price: $2,423
+Starting DIXIE price: $100
+Key functionalities:
+
+Real-time price feeds using Chainlink oracles for both BTC and ETH
+Automatic price calculation based on the weighted average of BTC and ETH price movements
+getCurrentDIXIEPrice() function to get the current price of DIXIE
+Price calculation logic that maintains the relative movement of the composite index
+Security features:
+
+Owner-only functions for updating price feed addresses
+Built-in price validation
+Standard ERC20 security features from OpenZeppelin
+The contract is ready to be deployed on the Ethereum network and will automatically track BTC and ETH prices through Chainlink's price feeds. The price of DIXIE will fluctuate proportionally with the combined movement of BTC and ETH prices, maintaining the equal weighting between the two cryptocurrencies.
+
+To deploy the contract:
+
+Configure your network settings in hardhat.config.js
+Run: npx hardhat run scripts/deploy.js --network -->
